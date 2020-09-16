@@ -2,3 +2,9 @@ body{
     background-color: beige;
 }
 
+.middle_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
