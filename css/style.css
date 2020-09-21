@@ -94,15 +94,31 @@ aside{
     border-radius: 2.5em 0em 0em 2.5em;
 }
 
+/* .contact{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: -10vh;
+    left: -10vh;
+    color: beige;
+    font-size: 10vh;
+    z-index: 10;
+    border: 10vh solid black;
+} */
+
+
 .section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: safe;
     align-items: center;
     align-content: center;
     /* padding: 7.5vh; */
     width: 100vw;
     height: 100vh;
+    padding-top: calc(4vh + 2vw);
+
 }
 
 .section2{
@@ -126,8 +142,13 @@ aside{
 img{
     max-height: 17vw;
     padding: 5vh;
-    border-color: black;
-    border: 50px;
+}
+
+img:hover{
+    max-height: 15vw;
+    transition: max-height 0.5s ease-in-out, background-color 0.25s ease-in-out;
+    background-color:rgba(0, 0, 0, 0.397);
+    border-radius: 50vw;
 }
 
 footer{
@@ -136,7 +157,7 @@ footer{
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 2vw;
+    padding: 2vw 0vw 2vw 0vw;
 }
 
 @media (max-width: 768px) {
@@ -146,10 +167,12 @@ footer{
   }
  img{
       max-height: 55vw;
-
+  }
+  img:hover{
+    max-height: 40vw;
   }
   .section2{
-      height: calc(100vh + 100vh);
+      height: calc(100vh + 150vh);
   }
   p{
     padding: 2vh 2vh 2vh 0vh;
