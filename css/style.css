@@ -160,6 +160,76 @@ footer{
     padding: 2vw 0vw 2vw 0vw;
 }
 
+/*Estilos contact form*/
+
+.wrapper_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: tomato;
+}
+
+.wrapper_contact > h1{
+    font-size: calc(4vw + 5vw);
+    font-weight: 700;
+    padding-left: 2vh;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input, textarea{
+    justify-content: center;
+    min-width: 75vw;
+    max-width: 60vh;
+    min-height: 1.5em;
+    margin: 1em;
+    padding: 1em;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1.25em;
+}
+
+input{
+    font-size: 1em;
+}
+input:focus, textarea:focus{
+    top: 0;
+    left: 0;
+    font-size: 85%;
+    opacity: 0.5;
+    color: black;
+    font-weight: bold;
+    }
+
+[type=button]{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+[value='Submit']:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+
+[type=button]:active{
+    font-size: 1.25em;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+
+
 @media (max-width: 768px) {
     .gallery {
       display: flex;

@@ -5,9 +5,31 @@
     <title>Contact Form</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/64f622e15e.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <main class="wrapper_contact">
+            <h1>Contact Me.</h1>
+        <form action="Request Info">
+            <input type="text" name="name" value="Set your name in here..">
+            <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{9}"
+       required value="xxx xxx xxx">
+            <textarea name="Message" id="Comment" cols="30" rows="10">Please give me some tips about what's in your mind..</textarea>
+            <input type="email" name="email" value="email" id="email">
+            <input type="button" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
     
 </body>
 </html>
